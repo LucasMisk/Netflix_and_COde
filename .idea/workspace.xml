@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nextflix_and_COde.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/FloatBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Timer/Timer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Timer/TimerState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Timer/iTimer.java" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="C1">
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/CacheBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/IntBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/FloatBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/FloatBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Log/TimeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Log/TimeUnit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +69,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681408708497</updated>
-      <workItem from="1681408709709" duration="1113000" />
+      <workItem from="1681408709709" duration="7717000" />
     </task>
+    <task id="LOCAL-00001" summary="C1">
+      <created>1681410101820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681410101820</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="C1" />
+    <option name="LAST_COMMIT_MESSAGE" value="C1" />
   </component>
 </project>

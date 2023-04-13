@@ -1,6 +1,7 @@
 package Algorithms;
 
 public class FloatBenchmark implements iBenchmark{
+    //implements a matrix multiplication algorithm
     int N;
     double[][] A;
     double[][] B;
@@ -8,7 +9,7 @@ public class FloatBenchmark implements iBenchmark{
     double[][] C;
     @Override
     public void run() {
-
+        C= multiplyMatrices(A,B);
     }
 
     @Override
@@ -25,7 +26,7 @@ public class FloatBenchmark implements iBenchmark{
 
     @Override
     public void clean() {
-
+        System.gc();
     }
 
     @Override
