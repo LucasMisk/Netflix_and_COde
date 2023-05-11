@@ -3,23 +3,21 @@ package Tests;
 import Algorithms.*;
 import Log.*;
 //import Score.*;
-import Score.FloatScore;
+import Score.SingleCoreScore;
 import Score.iScore;
 import Timer.*;
 
-public class TestFloat {
+public class TestSingleCore {
     public static void main(String[] args)
     {
-        final int workload=1000;
         iTimer timer = new Timer();
         iLog log = new ConsoleLogger();
         TimeUnit Milisecond = TimeUnit.Mili;
         TimeUnit Microsecond = TimeUnit.Micro;
         TimeUnit Second = TimeUnit.Sec;
-        iScore scorer = new FloatScore();
+        iScore scorer = new SingleCoreScore();
 
-        iBenchmark bench = new FloatBenchmark();
-        bench.initialize(workload);
+        iBenchmark bench = new SingleCoreBenchmark();
         bench.warmup();
         timer.start();
         bench.run();
