@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="C1">
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/CacheBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/IntBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Played with Visual">
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/MultiCoreBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithms/SingleCoreBenchmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/FloatScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/IntScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Score/iScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visual/NetflixApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/FloatBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/FloatBenchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Log/TimeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Log/TimeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,27 +47,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lucas/IdeaProjects/Nextflix_and_COde/src/Timer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucas/IdeaProjects/COBenchmark&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lucas\IdeaProjects\Nextflix_and_COde\src\Timer" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\IdeaProjects\Nextflix_and_COde\Resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Algorithms" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GradleRunConfiguration" />
+      </set>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,7 +87,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681408708497</updated>
-      <workItem from="1681408709709" duration="7717000" />
+      <workItem from="1681408709709" duration="7853000" />
+      <workItem from="1681661280389" duration="800000" />
+      <workItem from="1681728268480" duration="72000" />
+      <workItem from="1683372697244" duration="6139000" />
+      <workItem from="1683409940496" duration="6593000" />
+      <workItem from="1683416649476" duration="229000" />
+      <workItem from="1683417096238" duration="2101000" />
+      <workItem from="1683451841458" duration="894000" />
+      <workItem from="1683472317552" duration="372000" />
+      <workItem from="1683566032365" duration="3009000" />
+      <workItem from="1683802308292" duration="3735000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -78,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681410101820</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Cache , Int, Float Algorithms">
+      <created>1681416551357</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681416551357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="C1" />
-    <option name="LAST_COMMIT_MESSAGE" value="C1" />
+    <MESSAGE value="Added Cache , Int, Float Algorithms" />
+    <MESSAGE value="Played with Visual" />
+    <option name="LAST_COMMIT_MESSAGE" value="Played with Visual" />
   </component>
 </project>

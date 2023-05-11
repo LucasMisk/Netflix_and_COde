@@ -3,6 +3,8 @@ package Tests;
 import Algorithms.*;
 import Log.*;
 //import Score.*;
+import Score.CacheScore;
+import Score.iScore;
 import Timer.*;
 
 public class TestCache {
@@ -14,6 +16,7 @@ public class TestCache {
         TimeUnit Milisecond = TimeUnit.Mili;
         TimeUnit Microsecond = TimeUnit.Micro;
         TimeUnit Second = TimeUnit.Sec;
+        iScore scorer = new CacheScore();
 
         iBenchmark bench = new CacheBenchmark();
         bench.initialize(workload);
@@ -21,7 +24,9 @@ public class TestCache {
         timer.start();
         bench.run();
         long time = timer.stop();
+        int score = scorer.getScore(time);
         log.writeTime("Finished in", time, Milisecond);
+        log.write("Score: " + score);
         log.close();
         bench.clean();
     }
