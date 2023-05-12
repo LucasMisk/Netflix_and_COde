@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Played with Visual">
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/MultiCoreBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Algorithms/SingleCoreBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/FloatScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/IntScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Score/iScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visual/NetflixApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visual/MainContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visual/TestContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/NetflixApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/NetflixApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +59,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lucas\IdeaProjects\Nextflix_and_COde\Resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Visual" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Algorithms" />
     </key>
@@ -97,7 +91,10 @@
       <workItem from="1683451841458" duration="894000" />
       <workItem from="1683472317552" duration="372000" />
       <workItem from="1683566032365" duration="3009000" />
-      <workItem from="1683802308292" duration="3735000" />
+      <workItem from="1683802308292" duration="3795000" />
+      <workItem from="1683835786527" duration="12117000" />
+      <workItem from="1683848159700" duration="143000" />
+      <workItem from="1683848314068" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -113,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681416551357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Played with Visual">
+      <created>1683806395999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683806395999</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
