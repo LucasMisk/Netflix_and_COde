@@ -108,7 +108,7 @@ public class TestContent {
         mainPanel.add(button);
         mainPanel.setBackground(Color.BLACK);
         JPanel bottomPanel = new JPanel(new BorderLayout());
-        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back.png", 100, 100)), SwingConstants.LEFT);
+        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEFT);
         backButton.addMouseListener(new MouseAdapter()
         {
             public void mouseClicked(MouseEvent e)
