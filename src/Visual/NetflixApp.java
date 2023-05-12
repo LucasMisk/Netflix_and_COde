@@ -2,11 +2,11 @@ package Visual;
 import javax.swing.*;
 
 public class NetflixApp extends JFrame{
-    private static final long serialVersionUID = 1L;
 
 
     public NetflixApp() {
-        JComponent MainContents = MainContent.createMainContent(this);
+        MainContent mainContent = new MainContent();
+        JComponent MainContents = mainContent.createMainContent(this);
         setTitle("Netflix and COde");
         setSize(1200, 800);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

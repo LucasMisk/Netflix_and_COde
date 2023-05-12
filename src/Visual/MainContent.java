@@ -25,8 +25,9 @@ public class MainContent {
         }
         return bimg.getScaledInstance(width, height, Image.SCALE_SMOOTH);
     }
-    public static JComponent createMainContent( JFrame frame)
+    public JComponent createMainContent( JFrame frame)
     {
+        TestContent testContent = new TestContent();
         JComponent Main = new JPanel(new BorderLayout());
         // Set up main content area
         JPanel mainContent = new JPanel(new BorderLayout());
@@ -69,7 +70,7 @@ public class MainContent {
         {
             public void mouseClicked(MouseEvent e)
             {
-                JComponent start = TestContent.createStartContent(1, frame);
+                JComponent start = testContent.createStartContent(1, frame);
                 frame.setContentPane(start);
             }
         });
@@ -79,7 +80,7 @@ public class MainContent {
         {
             public void mouseClicked(MouseEvent e)
             {
-                JComponent start = TestContent.createStartContent(2, frame);
+                JComponent start = testContent.createStartContent(2, frame);
                 frame.setContentPane(start);
             }
         });
@@ -89,7 +90,7 @@ public class MainContent {
         {
             public void mouseClicked(MouseEvent e)
             {
-                JComponent start = TestContent.createStartContent(3, frame);
+                JComponent start = testContent.createStartContent(3, frame);
                 frame.setContentPane(start);
             }
         });
@@ -99,7 +100,7 @@ public class MainContent {
         {
             public void mouseClicked(MouseEvent e)
             {
-                JComponent start = TestContent.createStartContent(4, frame);
+                JComponent start = testContent.createStartContent(4, frame);
                 frame.setContentPane(start);
             }
         });
@@ -109,7 +110,7 @@ public class MainContent {
         {
             public void mouseClicked(MouseEvent e)
             {
-                JComponent start = TestContent.createStartContent(5, frame);
+                JComponent start = testContent.createStartContent(5, frame);
                 frame.setContentPane(start);
             }
         });

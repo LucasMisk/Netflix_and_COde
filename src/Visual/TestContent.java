@@ -14,6 +14,7 @@ import Tests.*;
 import static com.sun.java.accessibility.util.AWTEventMonitor.addMouseListener;
 
 public class TestContent {
+    LoadingPage loadingPage = new LoadingPage();
     JComponent MainPage;
     public static Image getImageToScale(String filename, int width, int height) {
         BufferedImage bimg=null;
@@ -28,7 +29,7 @@ public class TestContent {
     {
         this.MainPage = MainPage;
     }
-    public static JComponent createStartContent(int option, JFrame frame) {
+    public JComponent createStartContent(int option, JFrame frame) {
         // Create main frame with consistent color scheme
         JComponent panel = new JPanel(new BorderLayout());
         panel.setBackground(Color.BLACK);
@@ -72,6 +73,8 @@ public class TestContent {
         // Create main panel with photo and button
         JPanel mainPanel = new JPanel(new GridLayout(2, 1));
         mainPanel.setBackground(Color.WHITE);
+
+        JComponent Loading = loadingPage.createLoadingPage();
         JLabel button = new JLabel(new ImageIcon(getImageToScale("Resources/button.png", 169, 69)));
         button.addMouseListener(new MouseAdapter()
         {
@@ -80,6 +83,7 @@ public class TestContent {
                 try {
                     switch (option) {
                         case 1 -> {
+                            frame.setContentPane(Loading);
                             TestInt.main(null);
                         }
                         case 2 -> {
