@@ -15,7 +15,7 @@ public class CacheBenchmark implements iBenchmark{
     int[] array = new int[arraySize];
     Random random = new Random();
 
-    int workload;
+    long workload;
     @Override
     public void run() {
         randomAccess(workload);
@@ -28,7 +28,7 @@ public class CacheBenchmark implements iBenchmark{
 
     @Override
     public void initialize(Object... params) {
-        workload = (int)params[0];
+        workload = (long)params[0];
     }
 
     @Override
@@ -44,7 +44,7 @@ public class CacheBenchmark implements iBenchmark{
     @Override
     public void warmup() {
     }
-    private void randomAccess(int work)
+    private void randomAccess(long work)
     {
         for (int i = 0; i < work; i++) {
             int index = (i * 16) % array.length;

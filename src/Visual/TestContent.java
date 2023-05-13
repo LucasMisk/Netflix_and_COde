@@ -9,12 +9,12 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import Tests.*;
-
-
-import static com.sun.java.accessibility.util.AWTEventMonitor.addMouseListener;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 public class TestContent {
-    LoadingPage loadingPage = new LoadingPage();
+    LoadingContent loadingContent = new LoadingContent();
+    ScoreContent scoreContent = new ScoreContent();
     JComponent MainPage;
     public static Image getImageToScale(String filename, int width, int height) {
         BufferedImage bimg=null;
@@ -71,11 +71,12 @@ public class TestContent {
         topPanel.setBackground(Color.BLACK);
 
         // Create main panel with photo and button
-        JPanel mainPanel = new JPanel(new GridLayout(2, 1));
+        JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setBackground(Color.WHITE);
-
-        JComponent Loading = loadingPage.createLoadingPage();
-        JLabel button = new JLabel(new ImageIcon(getImageToScale("Resources/button.png", 169, 69)));
+        JComponent Loading = loadingContent.createLoadingPage();
+        JLabel button = new JLabel(new ImageIcon(getImageToScale("Resources/button.png", 169, 69)), SwingConstants.LEFT);
+        JPanel scorePanel = new JPanel(new BorderLayout());
+        scorePanel.setBackground(Color.BLACK);
         button.addMouseListener(new MouseAdapter()
         {
             public void mouseClicked(MouseEvent e)
@@ -84,19 +85,146 @@ public class TestContent {
                     switch (option) {
                         case 1 -> {
                             frame.setContentPane(Loading);
-                            TestInt.main(null);
+
+                            Thread testIntThread = new Thread(() -> {
+                                TestInt.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+
+                            testIntThread.start();
                         }
                         case 2 -> {
-                            TestFloat.main(null);
+                            frame.setContentPane(Loading);
+
+                            Thread testFloatThread = new Thread(() -> {
+                                TestFloat.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+
+                            testFloatThread.start();
                         }
                         case 3 -> {
-                            TestSingleCore.main(null);
+                            frame.setContentPane(Loading);
+
+                            Thread testSingleCoreThread = new Thread(() -> {
+                                TestSingleCore.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+                            testSingleCoreThread.start();
                         }
                         case 4 -> {
-                            TestMultiCore.main(null);
+                            frame.setContentPane(Loading);
+
+                            Thread testMultiCoreThread = new Thread(() -> {
+                                TestMultiCore.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+                            testMultiCoreThread.start();
                         }
                         case 5 -> {
-                            TestCache.main(null);
+                            frame.setContentPane(Loading);
+
+                            Thread testCacheThread = new Thread(() -> {
+                                TestCache.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+                            testCacheThread.start();
                         }
                         default -> {
                         }
@@ -109,9 +237,8 @@ public class TestContent {
         photo.setHorizontalAlignment(SwingConstants.CENTER);
         button.setHorizontalAlignment(SwingConstants.CENTER);
         mainPanel.add(photo);
-        mainPanel.add(button);
         mainPanel.setBackground(Color.BLACK);
-        JPanel bottomPanel = new JPanel(new BorderLayout());
+        JPanel bottomPanel = new JPanel(new GridLayout(1,2));
         JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEFT);
         backButton.addMouseListener(new MouseAdapter()
         {
@@ -121,6 +248,7 @@ public class TestContent {
             }
         });
         bottomPanel.add(backButton);
+        bottomPanel.add(button);
         bottomPanel.setBackground(Color.BLACK);
         // Add panels to main frame and set size
         panel.add(topPanel, BorderLayout.NORTH);

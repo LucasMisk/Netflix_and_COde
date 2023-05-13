@@ -12,6 +12,7 @@ public class TestMultiCore {
     {
         iTimer timer = new Timer();
         iLog log = new ConsoleLogger();
+        iLog flog = new FileLogger("Resources/score.txt");
         TimeUnit Milisecond = TimeUnit.Mili;
         TimeUnit Microsecond = TimeUnit.Micro;
         TimeUnit Second = TimeUnit.Sec;
@@ -28,6 +29,8 @@ public class TestMultiCore {
         log.writeTime("Finished in", time, Milisecond);
         log.write("Score: " + score);
         log.close();
+        flog.write(score);
+        flog.close();
         bench.clean();
     }
 }

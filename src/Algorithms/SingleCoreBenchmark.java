@@ -40,7 +40,7 @@ public class SingleCoreBenchmark implements iBenchmark{
 
     @Override
     public void warmup() {
-        int p = 2281; // Test for Mersenne prime 2^21701 - 1
+        int p = 11213; // Test for Mersenne prime 2^21701 - 1
         boolean isPrime = isMersennePrime(p);
     }
 
