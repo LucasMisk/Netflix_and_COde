@@ -60,6 +60,17 @@ public class TestContent {
                 title = new JLabel("Cache Memory Benchmark", SwingConstants.CENTER);
                 photo = new JLabel(new ImageIcon(getImageToScale("Resources/cache.png", 300, 300)));
             }
+            case 6 -> {
+
+            }
+            case 7 -> {
+                title = new JLabel("Memory Bandwidth Benchmark", SwingConstants.CENTER);
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram1.png", 300, 300)));
+            }
+            case 8 -> {
+                title = new JLabel("Random Access Benchmark", SwingConstants.CENTER);
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 300, 300)));
+            }
             default -> {
             }
         }
@@ -225,6 +236,67 @@ public class TestContent {
                                 });
                             });
                             testCacheThread.start();
+                        }
+                        case 6 -> {
+                            frame.setContentPane(Loading);
+                        }
+                        case 7 -> {
+                            frame.setContentPane(Loading);
+
+                            Thread MemoryBandwidthThread = new Thread(() -> {
+                                TestMemoryBandwidth.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+
+                            MemoryBandwidthThread.start();
+                        }
+                        case 8 -> {
+                            frame.setContentPane(Loading);
+
+                            Thread RandomAccessThread = new Thread(() -> {
+                                TestRandomAccess.main(null);
+
+                                SwingUtilities.invokeLater(() -> {
+                                    int score = 0;
+                                    File file = new File("Resources/score.txt");
+
+                                    try {
+                                        Scanner scanner = new Scanner(file);
+                                        score = scanner.nextInt();
+                                        scanner.close();
+                                    } catch (FileNotFoundException eio) {
+                                        eio.printStackTrace();
+                                    }
+                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
+                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
+                                    //scorePanel.add(scoreLabel);
+
+                                    JComponent Score = scoreContent.createScoreContent(score,back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+
+                            RandomAccessThread.start();
                         }
                         default -> {
                         }

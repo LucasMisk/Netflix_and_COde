@@ -133,15 +133,31 @@ public class MainContent {
         popularBox.add(popularMovies, BorderLayout.CENTER);
 
         // Create sample movie/show images for popular section
-        JLabel movie6 = new JLabel(new ImageIcon(getImageToScale("Resources/ram1.png", 300, 300)));
-        movie6.setPreferredSize(new Dimension(300, 300));
-        JLabel movie7 = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 300, 300)));
+        JLabel movie7 = new JLabel(new ImageIcon(getImageToScale("Resources/ram1.png", 300, 300)));
         movie7.setPreferredSize(new Dimension(300, 300));
-        JLabel movie8 = new JLabel(new ImageIcon(getImageToScale("Resources/ram3.png", 300, 300)));
+        movie7.addMouseListener(new MouseAdapter()
+        {
+            public void mouseClicked(MouseEvent e)
+            {
+                JComponent start = testContent.createStartContent(7, frame);
+                frame.setContentPane(start);
+            }
+        });
+        JLabel movie8 = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 300, 300)));
         movie8.setPreferredSize(new Dimension(300, 300));
-        popularMovies.add(movie6);
+        movie8.addMouseListener(new MouseAdapter()
+        {
+            public void mouseClicked(MouseEvent e)
+            {
+                JComponent start = testContent.createStartContent(8, frame);
+                frame.setContentPane(start);
+            }
+        });
+        JLabel movie9 = new JLabel(new ImageIcon(getImageToScale("Resources/ram3.png", 300, 300)));
+        movie9.setPreferredSize(new Dimension(300, 300));
         popularMovies.add(movie7);
         popularMovies.add(movie8);
+        popularMovies.add(movie9);
 
         // Add trending and popular sections to main content area
         JPanel content = new JPanel(new GridLayout(2, 1));
