@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Worked on Visual">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jide_oss_3_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/load2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visual/ScoreContent.java" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Added Visual implementation for RAM Benchmarks">
+      <change afterPath="$PROJECT_DIR$/Resources/full_cpu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nextflix_and_COde.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nextflix_and_COde.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/load.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/load.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/CacheBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/CacheBenchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/SingleCoreBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/SingleCoreBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestMemoryBandwidth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestMemoryBandwidth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TestRandomAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestRandomAccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/LoadingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/LoadingContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/MainContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/MainContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual/TestContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/TestContent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +116,12 @@
       <workItem from="1683925722839" duration="1553000" />
       <workItem from="1683927322197" duration="4322000" />
       <workItem from="1683972117485" duration="3229000" />
-      <workItem from="1683975604010" duration="6091000" />
+      <workItem from="1683975604010" duration="6388000" />
+      <workItem from="1684066065729" duration="27000" />
+      <workItem from="1684067376740" duration="156000" />
+      <workItem from="1684344180043" duration="1764000" />
+      <workItem from="1684663338434" duration="3786000" />
+      <workItem from="1684785971766" duration="6279000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -156,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683926005894</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Worked on Visual ... again">
+      <created>1683981985651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683981985651</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Visual implementation for RAM Benchmarks">
+      <created>1684346106363</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684346106363</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +184,8 @@
     <MESSAGE value="Added Cache , Int, Float Algorithms" />
     <MESSAGE value="Played with Visual" />
     <MESSAGE value="Worked on Visual" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on Visual" />
+    <MESSAGE value="Worked on Visual ... again" />
+    <MESSAGE value="Added Visual implementation for RAM Benchmarks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Visual implementation for RAM Benchmarks" />
   </component>
 </project>

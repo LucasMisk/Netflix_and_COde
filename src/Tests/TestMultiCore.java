@@ -25,8 +25,8 @@ public class TestMultiCore {
         bench.run(numThreads);
         long time = timer.stop();
         int score = scorer.getScore(time);
-        log.write("Number of threads used: " +numThreads);
-        log.writeTime("Finished in", time, Milisecond);
+        //log.write("Number of threads used: " +numThreads);
+        log.writeTime("Multicore Benchmark finished in", time, Milisecond);
         log.write("Score: " + score);
         log.close();
         flog.write(score);

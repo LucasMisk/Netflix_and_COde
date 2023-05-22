@@ -26,7 +26,7 @@ public class TestFloat {
         bench.run();
         long time = timer.stop();
         int score = scorer.getScore(time);
-        log.writeTime("Finished in", time, Milisecond);
+        log.writeTime("Float Benchmark finished in in", time, Milisecond);
         log.write("Score: " + score);
         log.close();
         flog.write(score);

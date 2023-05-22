@@ -28,7 +28,7 @@ public class TestRandomAccess {
         long time = timer.stop();
 
         int score = scorer.getScore(time);
-        log.writeTime("Finished in", time, Milisecond);
+        log.writeTime("Random Access Benchmark finished in", time, Milisecond);
         log.write("Score: " + score);
         flog.write(score);
         flog.close();

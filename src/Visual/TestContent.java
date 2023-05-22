@@ -11,6 +11,7 @@ import javax.swing.*;
 import Tests.*;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class TestContent {
     LoadingContent loadingContent = new LoadingContent();
@@ -61,7 +62,8 @@ public class TestContent {
                 photo = new JLabel(new ImageIcon(getImageToScale("Resources/cache.png", 300, 300)));
             }
             case 6 -> {
-
+                title = new JLabel("Full CPU Benchmark", SwingConstants.CENTER);
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/full_cpu.png", 300, 300)));
             }
             case 7 -> {
                 title = new JLabel("Memory Bandwidth Benchmark", SwingConstants.CENTER);
@@ -70,6 +72,10 @@ public class TestContent {
             case 8 -> {
                 title = new JLabel("Random Access Benchmark", SwingConstants.CENTER);
                 photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 300, 300)));
+            }
+            case 9 -> {
+                title = new JLabel("Full RAM Benchmark", SwingConstants.CENTER);
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram3.png", 300, 300)));
             }
             default -> {
             }
@@ -111,9 +117,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -140,9 +143,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -169,9 +169,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -197,9 +194,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -226,9 +220,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -239,6 +230,62 @@ public class TestContent {
                         }
                         case 6 -> {
                             frame.setContentPane(Loading);
+                            Thread testFullThread = new Thread(() -> {
+                                AtomicInteger score = new AtomicInteger(0);
+                                TestInt.main(null);
+                                File file = new File("Resources/score.txt");
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                TestFloat.main(null);
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                TestSingleCore.main(null);
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                TestMultiCore.main(null);
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                TestCache.main(null);
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                SwingUtilities.invokeLater(() -> {
+                                    JComponent Score = scoreContent.createScoreContent(score.intValue(),back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+                            testFullThread.start();
+
                         }
                         case 7 -> {
                             frame.setContentPane(Loading);
@@ -257,9 +304,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -286,9 +330,6 @@ public class TestContent {
                                     } catch (FileNotFoundException eio) {
                                         eio.printStackTrace();
                                     }
-                                    JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-                                    scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-                                    //scorePanel.add(scoreLabel);
 
                                     JComponent Score = scoreContent.createScoreContent(score,back, frame);
                                     frame.setContentPane(Score);
@@ -297,6 +338,38 @@ public class TestContent {
                             });
 
                             RandomAccessThread.start();
+                        }
+                        case 9 -> {
+                            frame.setContentPane(Loading);
+                            Thread testFullRAMThread = new Thread(() -> {
+                                AtomicInteger score = new AtomicInteger(0);
+                                TestMemoryBandwidth.main(null);
+                                File file = new File("Resources/score.txt");
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                TestRandomAccess.main(null);
+
+                                try {
+                                    Scanner scanner = new Scanner(file);
+                                    score.getAndAdd(scanner.nextInt());
+                                    scanner.close();
+                                } catch (FileNotFoundException eio) {
+                                    eio.printStackTrace();
+                                }
+                                SwingUtilities.invokeLater(() -> {
+                                    JComponent Score = scoreContent.createScoreContent(score.intValue(),back, frame);
+                                    frame.setContentPane(Score);
+                                    frame.revalidate();
+                                });
+                            });
+                            testFullRAMThread.start();
+
                         }
                         default -> {
                         }

@@ -32,7 +32,7 @@ public class TestMemoryBandwidth {
 
         System.out.println("Memory Bandwidth: " + bandwidth + " GB/s");
         int score = scorer.getScore(bandwidth);
-        log.writeTime("Finished in", time, Milisecond);
+        log.writeTime("Memory Bandwidth Benchmark finished in", time, Milisecond);
         log.write("Score: " + score);
         flog.write(score);
         flog.close();
