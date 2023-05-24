@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Netflix_and_COde:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Netflix_and_COde_jar</output-path>
+    <root id="archive" name="Netflix_and_COde.jar">
+      <element id="module-output" name="Netflix_and_COde" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jide-oss-3.0.4.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jide-oss-3.0.4" />
+    </root>
+  </artifact>
+</component>

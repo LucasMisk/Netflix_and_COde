@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Netflix_and_COde" />
+      <artifact name="Netflix_and_COde:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,6 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Cache Score">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Netflix_and_COde_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Netflix_and_COde.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Score/CacheScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lucas/IdeaProjects/Nextflix_and_COde/Resources",
+    "last_opened_file_path": "C:/Users/Lucas/IdeaProjects/Nextflix_and_COde/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,7 +141,7 @@
       <workItem from="1684873566970" duration="4681000" />
       <workItem from="1684878276766" duration="1567000" />
       <workItem from="1684937966675" duration="982000" />
-      <workItem from="1684939669587" duration="2054000" />
+      <workItem from="1684939669587" duration="2694000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -216,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684941647869</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Cache Score">
+      <created>1684941738156</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684941738156</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
