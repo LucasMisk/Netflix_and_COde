@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Final Version Backend + Tv Shows">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Netflix_and_COde.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Cache Score">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nextflix_and_COde.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Netflix_and_COde.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Score/CacheScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +139,7 @@
       <workItem from="1684873566970" duration="4681000" />
       <workItem from="1684878276766" duration="1567000" />
       <workItem from="1684937966675" duration="982000" />
-      <workItem from="1684939669587" duration="1712000" />
+      <workItem from="1684939669587" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -208,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684887585363</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Cache Score">
+      <created>1684941405817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684941405817</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +238,7 @@
     <MESSAGE value="Added Visual implementation for RAM Benchmarks" />
     <MESSAGE value="Backend finalised" />
     <MESSAGE value="Final Version Backend + Tv Shows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Version Backend + Tv Shows" />
+    <MESSAGE value="Cache Score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cache Score" />
   </component>
 </project>
