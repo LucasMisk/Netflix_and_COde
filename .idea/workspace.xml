@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Cache Score">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Score/CacheScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +137,7 @@
       <workItem from="1684873566970" duration="4681000" />
       <workItem from="1684878276766" duration="1567000" />
       <workItem from="1684937966675" duration="982000" />
-      <workItem from="1684939669587" duration="1949000" />
+      <workItem from="1684939669587" duration="2054000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -211,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684941405817</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Cache Score">
+      <created>1684941647869</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684941647869</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
