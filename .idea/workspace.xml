@@ -4,19 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Added Visual implementation for RAM Benchmarks">
-      <change afterPath="$PROJECT_DIR$/Resources/full_cpu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Backend finalised">
+      <change afterPath="$PROJECT_DIR$/Resources/BlackMirror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/BreakingBad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Elite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Kaleidoscope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Lucifer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/MoneyHeist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Outerbanks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/PrisonBreak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Riverdale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/SquidGame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/StrangerThings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/The100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/TheCrown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/TheFlash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Wednesday.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestMemoryBandwidth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestMemoryBandwidth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestMultiCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestRandomAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestRandomAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestSingleCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/MainContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/MainContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/CacheScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/FloatScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/FloatScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/IntScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/IntScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/MemoryBandwidthScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/MemoryBandwidthScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/RandomAccessScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/RandomAccessScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/ScoreContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/ScoreContent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visual/TestContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/TestContent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +135,12 @@
       <workItem from="1684067376740" duration="156000" />
       <workItem from="1684344180043" duration="1764000" />
       <workItem from="1684663338434" duration="3786000" />
-      <workItem from="1684785971766" duration="6279000" />
+      <workItem from="1684785971766" duration="6744000" />
+      <workItem from="1684795011040" duration="126000" />
+      <workItem from="1684834860633" duration="1226000" />
+      <workItem from="1684873255836" duration="296000" />
+      <workItem from="1684873566970" duration="4681000" />
+      <workItem from="1684878276766" duration="1486000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -172,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684346106363</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Backend finalised">
+      <created>1684793369447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684793369447</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +212,7 @@
     <MESSAGE value="Worked on Visual" />
     <MESSAGE value="Worked on Visual ... again" />
     <MESSAGE value="Added Visual implementation for RAM Benchmarks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Visual implementation for RAM Benchmarks" />
+    <MESSAGE value="Backend finalised" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend finalised" />
   </component>
 </project>

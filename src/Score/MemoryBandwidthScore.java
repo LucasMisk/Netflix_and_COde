@@ -13,6 +13,6 @@ public class MemoryBandwidthScore implements iScore{
     @Override
     public int getScore(Object... params) {
         double bandwidth = (double)params[0];
-        return (int)(cbrt(bandwidth*1000000000)*2);
+        return (int)(cbrt(bandwidth*1000000000)*20);
     }
 }

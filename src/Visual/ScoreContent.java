@@ -14,6 +14,7 @@ import java.util.Scanner;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 public class ScoreContent {
+    GenerateMovie generator = new GenerateMovie();
     public static Image getImageToScale(String filename, int width, int height) {
         BufferedImage bimg=null;
         try{
@@ -25,15 +26,17 @@ public class ScoreContent {
     }
     public JComponent createScoreContent(int score, JComponent back, JFrame frame) {
         JComponent panel = new JPanel(new BorderLayout());
-        JPanel mainPanel = new JPanel(new GridLayout(2, 1));
-        JLabel title = new JLabel("Your Score is:",SwingConstants.CENTER);
-        JLabel scoreLabel = new JLabel(String.valueOf(score), SwingConstants.CENTER);
-        title.setFont(new Font("Arial", Font.BOLD, 30));
+        JPanel mainPanel = new JPanel(new GridLayout(3, 1));
+        JLabel scoreLabel = new JLabel("Your Score: " + String.valueOf(score), SwingConstants.CENTER);
         scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-        title.setForeground(Color.WHITE);
         scoreLabel.setForeground(Color.WHITE);
-        mainPanel.add(title, BorderLayout.CENTER);
+        JLabel movietitle = new JLabel("The series matching your score is: " + '\n' + generator.getMovietite(score),SwingConstants.CENTER);
+        movietitle.setFont(new Font("Arial", Font.BOLD, 30));
+        movietitle.setForeground(Color.WHITE);
+        JLabel movie = new JLabel(new ImageIcon(getImageToScale(generator.getMovie(score), 400, 200)), SwingConstants.CENTER);
         mainPanel.add(scoreLabel, BorderLayout.CENTER);
+        mainPanel.add(movietitle, BorderLayout.CENTER);
+        mainPanel.add(movie, BorderLayout.CENTER);
         mainPanel.setBackground(Color.BLACK);
         JPanel bottomPanel = new JPanel(new BorderLayout());
         JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEFT);

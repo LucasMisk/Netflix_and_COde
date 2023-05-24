@@ -279,7 +279,7 @@ public class TestContent {
                                     eio.printStackTrace();
                                 }
                                 SwingUtilities.invokeLater(() -> {
-                                    JComponent Score = scoreContent.createScoreContent(score.intValue(),back, frame);
+                                    JComponent Score = scoreContent.createScoreContent(score.intValue()/5,back, frame);
                                     frame.setContentPane(Score);
                                     frame.revalidate();
                                 });
