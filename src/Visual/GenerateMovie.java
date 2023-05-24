@@ -43,8 +43,8 @@ public class GenerateMovie {
             add("Resources/BreakingBad.png");
             add("Resources/Wednesday.png");
             add("Resources/Lucifer.png");
-            add("--Resources/TheCrown.png");
-            add("--Resources/MoneyHeist.png");
+            add("Resources/TheCrown.png");
+            add("Resources/MoneyHeist.png");
             add("Resources/StrangerThings.png");
             add("Resources/Outerbanks.png");
             add("Resources/PrisonBreak.png");
