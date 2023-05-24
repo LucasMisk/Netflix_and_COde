@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Netflix_and_COde">
+    <output-path>$PROJECT_DIR$/out/artifacts/Netflix_and_COde</output-path>
+    <root id="archive" name="Netflix_and_COde.jar">
+      <element id="module-source" name="Netflix_and_COde" />
+      <element id="dir-copy" path="$PROJECT_DIR$/Resources" />
+    </root>
+  </artifact>
+</component>

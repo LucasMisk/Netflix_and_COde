@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Netflix_and_COde" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Backend finalised">
-      <change afterPath="$PROJECT_DIR$/Resources/BlackMirror.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/BreakingBad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Elite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Kaleidoscope.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Lucifer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/MoneyHeist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Outerbanks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/PrisonBreak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Riverdale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/SquidGame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/StrangerThings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/The100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/TheCrown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/TheFlash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Wednesday.png" afterDir="false" />
+    <list default="true" id="986f49f7-c3cc-4801-a786-f9fd7b6ecc5a" name="Changes" comment="Final Version Backend + Tv Shows">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Netflix_and_COde.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/score.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nextflix_and_COde.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Netflix_and_COde.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Score/CacheScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/CacheScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/FloatScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/FloatScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/IntScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/IntScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/MemoryBandwidthScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/MemoryBandwidthScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/MultiCoreScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/RandomAccessScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/RandomAccessScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score/SingleCoreScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/GenerateMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/ScoreContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/ScoreContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/TestContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visual/TestContent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucas/Downloads/jide-oss-3.0.4.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Lucas/IdeaProjects/Nextflix_and_COde/Resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lucas\IdeaProjects\Nextflix_and_COde\src\Timer" />
@@ -101,6 +87,21 @@
         <option value="GradleRunConfiguration" />
       </set>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Netflix_and_COde" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Netflix_and_COde" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,7 +141,9 @@
       <workItem from="1684834860633" duration="1226000" />
       <workItem from="1684873255836" duration="296000" />
       <workItem from="1684873566970" duration="4681000" />
-      <workItem from="1684878276766" duration="1486000" />
+      <workItem from="1684878276766" duration="1567000" />
+      <workItem from="1684937966675" duration="982000" />
+      <workItem from="1684939669587" duration="1712000" />
     </task>
     <task id="LOCAL-00001" summary="C1">
       <created>1681410101820</created>
@@ -198,11 +201,29 @@
       <option name="project" value="LOCAL" />
       <updated>1684793369447</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final Version Backend + Tv Shows">
+      <created>1684887585363</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684887585363</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -213,6 +234,7 @@
     <MESSAGE value="Worked on Visual ... again" />
     <MESSAGE value="Added Visual implementation for RAM Benchmarks" />
     <MESSAGE value="Backend finalised" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend finalised" />
+    <MESSAGE value="Final Version Backend + Tv Shows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version Backend + Tv Shows" />
   </component>
 </project>
