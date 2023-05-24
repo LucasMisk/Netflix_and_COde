@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.FlowLayout;
 public class LoadingContent {
     public static Image getImageToScale(String filename, int width, int height)
     {
@@ -26,16 +27,16 @@ public class LoadingContent {
         JPanel mainPanel = new JPanel(new BorderLayout());
         JPanel secondPanel = new JPanel(new BorderLayout());
         JLabel title = new JLabel("Benching your marks...", SwingConstants.CENTER);
-        title.setFont(new Font("Arial", Font.BOLD, 30));
-        title.setForeground(Color.WHITE);
+        title.setFont(new Font("Monospaced", Font.BOLD, 40));
+        title.setForeground(Color.decode("#a4f5ec"));
         ImageIcon gif = new ImageIcon("Resources/load.gif");
-        //Image gifImage = gif.getImage();
-        //Image resizedImage = gifImage.getScaledInstance(500, 500, Image.SCALE_DEFAULT);
-        //ImageIcon resizedGif = new ImageIcon(resizedImage);
-        JLabel gifLabel = new JLabel(gif);
+        Image gifImage = gif.getImage();
+        Image resizedImage = gifImage.getScaledInstance(400, 400, Image.SCALE_DEFAULT);
+        ImageIcon resizedGif = new ImageIcon(resizedImage);
+        JLabel gifLabel = new JLabel(resizedGif);
         mainPanel.setBackground(Color.BLACK);
         secondPanel.setBackground(Color.BLACK);
-        mainPanel.add(title, BorderLayout.NORTH);
+        mainPanel.add(title, BorderLayout.PAGE_START);
         secondPanel.add(gifLabel, BorderLayout.CENTER);
         panel.setSize(1200, 800);
         panel.add(mainPanel, BorderLayout.NORTH);

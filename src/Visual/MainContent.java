@@ -48,8 +48,8 @@ public class MainContent {
         trendingBox.setBackground(Color.BLACK);
         trendingBox.setBorder(BorderFactory.createEmptyBorder(20, 20, 0, 20));
         JLabel trendingLabel = new JLabel("CPU Benchmark");
-        trendingLabel.setFont(new Font("Arial", Font.BOLD, 20));
-        trendingLabel.setForeground(Color.decode("#E50914"));
+        trendingLabel.setFont(new Font("Monospaced", Font.BOLD, 20));
+        trendingLabel.setForeground(Color.decode("#f06007"));
         trendingBox.add(trendingLabel, BorderLayout.NORTH);
         JPanel trendingMovies = new JPanel(new FlowLayout());
         trendingMovies.setBackground(Color.BLACK);
@@ -75,9 +75,9 @@ public class MainContent {
             }
         });
         JLabel movie1Text = new JLabel("Integer Operations Benchmark");
-        movie1Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie1Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie1Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie1Text.setForeground(Color.WHITE);
+        movie1Text.setForeground(Color.decode("#a4f5ec"));
         movie1Text.setBackground(Color.BLACK);
         JPanel movie1Panel = new JPanel(new BorderLayout());
         movie1Panel.setBackground(Color.BLACK);
@@ -95,9 +95,9 @@ public class MainContent {
             }
         });
         JLabel movie2Text = new JLabel("Floating Point Benchmark");
-        movie2Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie2Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie2Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie2Text.setForeground(Color.WHITE);
+        movie2Text.setForeground(Color.decode("#a4f5ec"));
         movie2Text.setBackground(Color.BLACK);
         JPanel movie2Panel = new JPanel(new BorderLayout());
         movie2Panel.setBackground(Color.BLACK);
@@ -115,9 +115,9 @@ public class MainContent {
             }
         });
         JLabel movie3Text = new JLabel("Single Core Benchmark");
-        movie3Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie3Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie3Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie3Text.setForeground(Color.WHITE);
+        movie3Text.setForeground(Color.decode("#a4f5ec"));
         movie3Text.setBackground(Color.BLACK);
         JPanel movie3Panel = new JPanel(new BorderLayout());
         movie3Panel.setBackground(Color.BLACK);
@@ -135,9 +135,9 @@ public class MainContent {
             }
         });
         JLabel movie4Text = new JLabel("Multi-Core Benchmark");
-        movie4Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie4Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie4Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie4Text.setForeground(Color.WHITE);
+        movie4Text.setForeground(Color.decode("#a4f5ec"));
         movie4Text.setBackground(Color.BLACK);
         JPanel movie4Panel = new JPanel(new BorderLayout());
         movie4Panel.setBackground(Color.BLACK);
@@ -155,9 +155,9 @@ public class MainContent {
             }
         });
         JLabel movie5Text = new JLabel("Cache Benchmark");
-        movie5Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie5Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie5Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie5Text.setForeground(Color.WHITE);
+        movie5Text.setForeground(Color.decode("#a4f5ec"));
         movie5Text.setBackground(Color.BLACK);
         JPanel movie5Panel = new JPanel(new BorderLayout());
         movie5Panel.setBackground(Color.BLACK);
@@ -175,9 +175,9 @@ public class MainContent {
             }
         });
         JLabel movie6Text = new JLabel("Full CPU Benchmark");
-        movie6Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie6Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie6Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie6Text.setForeground(Color.WHITE);
+        movie6Text.setForeground(Color.decode("#a4f5ec"));
         movie6Text.setBackground(Color.BLACK);
         JPanel movie6Panel = new JPanel(new BorderLayout());
         movie6Panel.setBackground(Color.BLACK);
@@ -196,8 +196,8 @@ public class MainContent {
         popularBox.setBackground(Color.BLACK);
         popularBox.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         JLabel popularLabel = new JLabel("RAM Benchmark");
-        popularLabel.setFont(new Font("Arial", Font.BOLD, 20));
-        popularLabel.setForeground(Color.decode("#E50914"));
+        popularLabel.setFont(new Font("Monospaced", Font.BOLD, 20));
+        popularLabel.setForeground(Color.decode("#f06007"));
         popularBox.add(popularLabel, BorderLayout.NORTH);
         JPanel popularMovies = new JPanel(new FlowLayout());
         popularMovies.setBackground(Color.BLACK);
@@ -214,10 +214,10 @@ public class MainContent {
                 frame.setContentPane(start);
             }
         });
-        JLabel movie7Text = new JLabel("RAM Memory Bandwidth Benchmark");
-        movie7Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        JLabel movie7Text = new JLabel("Memory Bandwidth Benchmark");
+        movie7Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie7Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie7Text.setForeground(Color.WHITE);
+        movie7Text.setForeground(Color.decode("#a4f5ec"));
         movie7Text.setBackground(Color.BLACK);
         JPanel movie7Panel = new JPanel(new BorderLayout());
         movie7Panel.setBackground(Color.BLACK);
@@ -233,10 +233,10 @@ public class MainContent {
                 frame.setContentPane(start);
             }
         });
-        JLabel movie8Text = new JLabel("RAM Random Access Benchmark");
-        movie8Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        JLabel movie8Text = new JLabel("Random Access Benchmark");
+        movie8Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie8Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie8Text.setForeground(Color.WHITE);
+        movie8Text.setForeground(Color.decode("#a4f5ec"));
         movie8Text.setBackground(Color.BLACK);
         JPanel movie8Panel = new JPanel(new BorderLayout());
         movie8Panel.setBackground(Color.BLACK);
@@ -253,9 +253,9 @@ public class MainContent {
             }
         });
         JLabel movie9Text = new JLabel("Full RAM Benchmark");
-        movie9Text.setFont(new Font("Arial", Font.PLAIN, 18));
+        movie9Text.setFont(new Font("Monospaced", Font.ITALIC, 16));
         movie9Text.setHorizontalAlignment(SwingConstants.CENTER);
-        movie9Text.setForeground(Color.WHITE);
+        movie9Text.setForeground(Color.decode("#a4f5ec"));
         movie9Text.setBackground(Color.BLACK);
         JPanel movie9Panel = new JPanel(new BorderLayout());
         movie9Panel.setBackground(Color.BLACK);

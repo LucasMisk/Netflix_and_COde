@@ -27,12 +27,15 @@ public class ScoreContent {
     public JComponent createScoreContent(int score, JComponent back, JFrame frame) {
         JComponent panel = new JPanel(new BorderLayout());
         JPanel mainPanel = new JPanel(new GridLayout(3, 1));
+        JLabel logo = new JLabel(new ImageIcon(getImageToScale("Resources/netflix_logo.png", 256, 144)), SwingConstants.LEFT);
+        logo.setFont(new Font("Monospaced", Font.BOLD | Font.ITALIC, 40));
+        panel.add(logo, BorderLayout.PAGE_START);
         JLabel scoreLabel = new JLabel("Your Score: " + String.valueOf(score), SwingConstants.CENTER);
-        scoreLabel.setFont(new Font("Arial", Font.BOLD, 30));
-        scoreLabel.setForeground(Color.WHITE);
+        scoreLabel.setFont(new Font("Monospaced", Font.BOLD, 30));
+        scoreLabel.setForeground(Color.decode("#f06007"));
         JLabel movietitle = new JLabel("The series matching your score is: " + '\n' + generator.getMovietite(score),SwingConstants.CENTER);
-        movietitle.setFont(new Font("Arial", Font.BOLD, 30));
-        movietitle.setForeground(Color.WHITE);
+        movietitle.setFont(new Font("Monospaced", Font.BOLD, 30));
+        movietitle.setForeground(Color.decode("#f06007"));
         JLabel movie = new JLabel(new ImageIcon(getImageToScale(generator.getMovie(score), 400, 200)), SwingConstants.CENTER);
         mainPanel.add(scoreLabel, BorderLayout.CENTER);
         mainPanel.add(movietitle, BorderLayout.CENTER);

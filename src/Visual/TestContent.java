@@ -33,7 +33,7 @@ public class TestContent {
     public JComponent createStartContent(int option, JFrame frame) {
         // Create main frame with consistent color scheme
         JComponent panel = new JPanel(new BorderLayout());
-        panel.setBackground(Color.BLACK);
+        panel.setBackground(Color.decode("#3b0202"));
         JComponent back = (JComponent) frame.getContentPane();
         // Create top panel with logo and title
         JPanel topPanel = new JPanel(new GridLayout(2, 1));
@@ -41,48 +41,77 @@ public class TestContent {
         JLabel title = null;
         JLabel photo = null;
         switch (option) {
-            case 1 -> {
-                title = new JLabel("Integer Operations Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/int.png", 300, 300)));
+            case 1 ->
+            {
+                title =  new JLabel("Integer Operations Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/int.png", 400, 400)));
             }
-            case 2 -> {
-                title = new JLabel("Floating Point Operations Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/float.png", 300, 300)));
+            case 2 ->
+            {
+                title =  new JLabel("Floating Point Operations Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/float.png", 400, 400)));
             }
             case 3 -> {
-                title = new JLabel("Single Core Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/single_core.png", 300, 300)));
+                title = new JLabel("Single Core Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/single_core.png", 400, 400)));
             }
             case 4 -> {
-                title = new JLabel("Multi Core Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/multi_core.png", 300, 300)));
+                title = new JLabel("Multi Core Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/multi_core.png", 400, 400)));
             }
             case 5 -> {
-                title = new JLabel("Cache Memory Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/cache.png", 300, 300)));
+                title = new JLabel("Cache Memory Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/cache.png", 400, 400)));
             }
             case 6 -> {
-                title = new JLabel("Full CPU Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/full_cpu.png", 300, 300)));
+                title = new JLabel("Full CPU Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/full_cpu.png", 400, 400)));
             }
             case 7 -> {
-                title = new JLabel("Memory Bandwidth Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram1.png", 300, 300)));
+                title = new JLabel("Memory Bandwidth Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram1.png", 400, 400)));
             }
             case 8 -> {
-                title = new JLabel("Random Access Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 300, 300)));
+                title = new JLabel("Random Access Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram2.png", 400, 400)));
             }
             case 9 -> {
-                title = new JLabel("Full RAM Benchmark", SwingConstants.CENTER);
-                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram3.png", 300, 300)));
+                title = new JLabel("Full RAM Benchmark");
+                title.setFont(new Font("Monospaced", Font.ITALIC, 25));
+                title.setHorizontalAlignment(SwingConstants.CENTER);
+                title.setForeground(Color.decode("#a4f5ec"));
+                photo = new JLabel(new ImageIcon(getImageToScale("Resources/ram3.png", 400, 400)));
             }
             default -> {
             }
         }
         JLabel logo = new JLabel(new ImageIcon(getImageToScale("Resources/netflix_logo.png", 256, 144)), SwingConstants.LEFT);
-        title.setFont(new Font("Arial", Font.BOLD, 30));
-        title.setForeground(Color.WHITE);
+        logo.setFont(new Font("Monospaced", Font.BOLD | Font.ITALIC, 40));
+        logo.setForeground(Color.decode("#a4f5ec"));
         topPanel.add(logo);
         topPanel.add(title);
         topPanel.setBackground(Color.BLACK);
@@ -91,7 +120,7 @@ public class TestContent {
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setBackground(Color.WHITE);
         JComponent Loading = loadingContent.createLoadingPage();
-        JLabel button = new JLabel(new ImageIcon(getImageToScale("Resources/button.png", 169, 69)), SwingConstants.LEFT);
+        JLabel button = new JLabel(new ImageIcon(getImageToScale("Resources/button.png", 169, 69)), SwingConstants.CENTER);
         JPanel scorePanel = new JPanel(new BorderLayout());
         scorePanel.setBackground(Color.BLACK);
         button.addMouseListener(new MouseAdapter()
@@ -384,7 +413,10 @@ public class TestContent {
         mainPanel.add(photo);
         mainPanel.setBackground(Color.BLACK);
         JPanel bottomPanel = new JPanel(new GridLayout(1,2));
-        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEFT);
+        //JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEADING);
+        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)));
+        backButton.setHorizontalAlignment(SwingConstants.CENTER);
+
         backButton.addMouseListener(new MouseAdapter()
         {
             public void mouseClicked(MouseEvent e)
@@ -399,7 +431,7 @@ public class TestContent {
         panel.add(topPanel, BorderLayout.NORTH);
         panel.add(mainPanel, BorderLayout.CENTER);
         panel.add(bottomPanel, BorderLayout.SOUTH);
-        panel.setSize(1200, 800);
+        panel.setSize(1200, 760);
         return panel;
     }
 }
