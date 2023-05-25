@@ -27,22 +27,26 @@ public class ScoreContent {
     public JComponent createScoreContent(int score, JComponent back, JFrame frame) {
         JComponent panel = new JPanel(new BorderLayout());
         JPanel mainPanel = new JPanel(new GridLayout(3, 1));
-        JLabel logo = new JLabel(new ImageIcon(getImageToScale("Resources/netflix_logo.png", 256, 144)), SwingConstants.LEFT);
-        logo.setFont(new Font("Monospaced", Font.BOLD | Font.ITALIC, 40));
-        panel.add(logo, BorderLayout.PAGE_START);
-        JLabel scoreLabel = new JLabel("Your Score: " + String.valueOf(score), SwingConstants.CENTER);
-        scoreLabel.setFont(new Font("Monospaced", Font.BOLD, 30));
+        //JLabel logo = new JLabel(new ImageIcon(getImageToScale("Resources/netflix_logo.png", 256, 144)), SwingConstants.LEFT);
+        //logo.setFont(new Font("Monospaced", Font.BOLD | Font.ITALIC, 40));
+        //panel.add(logo, BorderLayout.PAGE_START);
+        JLabel scoreLabel = new JLabel("<html>Watched for: <font color='#98f5eb'>" + String.valueOf(score) +"</font color>" + " hours" + "</html>", SwingConstants.CENTER);
+        scoreLabel.setFont(new Font("Monospaced", Font.BOLD, 35));
         scoreLabel.setForeground(Color.decode("#f06007"));
-        JLabel movietitle = new JLabel("The series matching your score is: " + '\n' + generator.getMovietite(score),SwingConstants.CENTER);
+        //JLabel movietitle = new JLabel("The series matching your score is: " + '\n' + generator.getMovietite(score),SwingConstants.CENTER);
+        //JLabel movietitle = new JLabel("<html>The series matching your score is:<br/>" + generator.getMovietite(score) + "</html>", SwingConstants.CENTER);
+        //JLabel movietitle = new JLabel("<html>The series matching your score is:<br/><center>" + generator.getMovietite(score) + "</center></html>", SwingConstants.CENTER);
+        JLabel movietitle = new JLabel("<html>The series matching your score is:<br/><center><font color='#98f5eb'>" + generator.getMovietite(score) + "</font></center></html>", SwingConstants.CENTER);
         movietitle.setFont(new Font("Monospaced", Font.BOLD, 30));
         movietitle.setForeground(Color.decode("#f06007"));
-        JLabel movie = new JLabel(new ImageIcon(getImageToScale(generator.getMovie(score), 400, 200)), SwingConstants.CENTER);
+        //JLabel movie = new JLabel(new ImageIcon(getImageToScale(generator.getMovie(score), 400, 400)), SwingConstants.CENTER);
+        JLabel movie = new JLabel(new ImageIcon(getImageToScale(generator.getMovie(score), 410, 290)), SwingConstants.CENTER);
         mainPanel.add(scoreLabel, BorderLayout.CENTER);
         mainPanel.add(movietitle, BorderLayout.CENTER);
         mainPanel.add(movie, BorderLayout.CENTER);
         mainPanel.setBackground(Color.BLACK);
         JPanel bottomPanel = new JPanel(new BorderLayout());
-        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEFT);
+        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 80, 80)), SwingConstants.LEFT);
         backButton.addMouseListener(new MouseAdapter()
         {
             public void mouseClicked(MouseEvent e)

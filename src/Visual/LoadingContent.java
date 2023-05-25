@@ -26,8 +26,9 @@ public class LoadingContent {
         JComponent panel = new JPanel(new BorderLayout());
         JPanel mainPanel = new JPanel(new BorderLayout());
         JPanel secondPanel = new JPanel(new BorderLayout());
-        JLabel title = new JLabel("Benching your marks...", SwingConstants.CENTER);
-        title.setFont(new Font("Monospaced", Font.BOLD, 40));
+        //JLabel title = new JLabel("Benching your marks...", SwingConstants.CENTER);
+        JLabel title = new JLabel("<html><br/><br/><br/><center>" + "Benching your marks..." + "</center></html>", SwingConstants.CENTER);
+        title.setFont(new Font("Monospaced", Font.BOLD | Font.ITALIC, 30));
         title.setForeground(Color.decode("#a4f5ec"));
         ImageIcon gif = new ImageIcon("Resources/load.gif");
         Image gifImage = gif.getImage();

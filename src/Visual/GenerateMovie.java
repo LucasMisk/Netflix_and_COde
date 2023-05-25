@@ -43,17 +43,17 @@ public class GenerateMovie {
             add("Resources/BreakingBad.png");
             add("Resources/Wednesday.png");
             add("Resources/Lucifer.png");
-            add("Resources/TheCrown.png");
-            add("Resources/MoneyHeist.png");
-            add("Resources/StrangerThings.png");
-            add("Resources/Outerbanks.png");
+            add("Resources/c.png");
+            add("Resources/m.png");
+            add("Resources/s.png");
+            add("Resources/o.png");
             add("Resources/PrisonBreak.png");
             add("Resources/The100.png");
-            add("Resources/Elite.png");
+            add("Resources/e.png");
             add("Resources/BlackMirror.png");
             add("Resources/SquidGame.png");
             add("Resources/TheFlash.png");
-            add("Resources/Kaleidoscope.png");
+            add("Resources/k.png");
             add("Resources/Riverdale.png");
         }
     };
