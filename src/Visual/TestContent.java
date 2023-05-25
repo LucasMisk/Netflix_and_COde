@@ -414,7 +414,7 @@ public class TestContent {
         mainPanel.setBackground(Color.BLACK);
         JPanel bottomPanel = new JPanel(new GridLayout(1,2));
         //JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)), SwingConstants.LEADING);
-        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 100, 100)));
+        JLabel backButton = new JLabel(new ImageIcon(getImageToScale("Resources/back2.png", 80, 80)));
         backButton.setHorizontalAlignment(SwingConstants.CENTER);
 
         backButton.addMouseListener(new MouseAdapter()
